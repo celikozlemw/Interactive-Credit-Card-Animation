@@ -33,7 +33,7 @@
     position: absolute;
     border-radius: 10px;
     backface-visibility: hidden;
-    background: linear-gradient(55deg, #232222fc 45%, rgb(25 25 25) 40%);
+    background: linear-gradient(55deg, #0b0b0bfc 45%, rgb(25 25 25) 40%);
 }
 
 #back {
@@ -110,7 +110,7 @@
     padding: 5px 10px;
     border-radius: 20px;
     font-family: calibri;
-    background: rgb(63, 63, 63);
+    background: rgb(28, 28, 107);
 }
 
 .logo {
@@ -120,10 +120,12 @@
     height: 20%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end; /* Align items to the bottom */
     font-weight: bold;
-    bottom: 3%;
+    bottom: 5%; /* Adjust the bottom value */
     right: 0%;
+   
+    
 }
 
 .logo::before,
@@ -133,15 +135,16 @@
     width: 50%;
     aspect-ratio: 1/1;
     border-radius: 50%;
+  
 }
 
 .logo::before {
-    
-    left: 10%
+    background: rgba(62, 62, 62, 0.525);
+    left: 10%;
 }
 
 .logo::after {
-    
+    background: rgba(110, 110, 110, 0.584);
     right: 10%;
 }
 
@@ -155,7 +158,6 @@
    background: linear-gradient(to right, #e8dbd4 0%, #f0e2dd 25%, #ffffff 50%, #f0e2dd 75%, #e8dbd4 100%);
 
     width: 15%;
- 
     height: 18%;
     border-radius: 5px;
     margin-left: 15px;
@@ -166,7 +168,7 @@
 
 #chip span {
     position: absolute;
-    background: linear-gradient(to right, #e8dbd4 0%, #f0e2dd 25%, #ffffff 50%, #f0e2dd 75%, #e8dbd4 100%);
+  background: linear-gradient(to right, #e8dbd4 0%, #f0e2dd 25%, #ffffff 50%, #f0e2dd 75%, #e8dbd4 100%);
 
     border: 1px solid black;
 }
@@ -210,7 +212,7 @@
     width: 100%;
     height: 100%;
     position: absolute;
-    transition: 2s;
+    transition: 1s;
 }
 
 .reflection::before {
